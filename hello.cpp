@@ -15,8 +15,8 @@ void Getandset()
     Point P;
     int a =5;
     int b = 6;
-    Point::getX();
-    Point::getY();
-    Point::setX(a);
-    Point::setY(b);
+    P::getX();
+    P::getY();
+    P::setX(a);
+    P::setY(b);
 }
