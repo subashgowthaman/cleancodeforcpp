@@ -10,7 +10,7 @@ public:
     inline void setY(int y) { this->y = y; }
 };
 
-int main()
+int GetSet()
 {
     Point P;
 }
