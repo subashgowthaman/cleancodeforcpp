@@ -10,13 +10,14 @@ public:
     inline void setY(int y) { this->y = y; }
 };
 
-void Getandset()
+int main()
 {
     Point P;
-    int a =5;
-    int b = 6;
-    P::getX();
-    P::getY();
-    P::setX(a);
-    P::setY(b);
+    P.x = 5;
+    P.y = 6;
+    P.getX();
+    P.getY();
+    P.setX(P.x);
+    P.setY(P.y);
+    return 0;
 }
