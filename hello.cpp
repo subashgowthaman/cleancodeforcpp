@@ -13,11 +13,4 @@ public:
 int main()
 {
     Point P;
-    P.x = 5;
-    P.y = 6;
-    P.getX();
-    P.getY();
-    P.setX(P.x);
-    P.setY(P.y);
-    return 0;
 }
