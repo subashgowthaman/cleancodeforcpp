@@ -9,3 +9,12 @@ public:
     inline void setX(int x) { this->x = x; }
     inline void setY(int y) { this->y = y; }
 };
+
+void Getandset()
+{
+    Point P;
+    p.getX();
+    p.getY();
+    p.setX();
+    p.setY();
+}
