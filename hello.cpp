@@ -13,8 +13,8 @@ public:
 void Getandset()
 {
     Point P;
-    p.getX();
-    p.getY();
-    p.setX();
-    p.setY();
+    P.getX();
+    P.getY();
+    P.setX();
+    P.setY();
 }
