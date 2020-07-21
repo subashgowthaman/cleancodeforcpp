@@ -1,4 +1,5 @@
-bool checkValidvitals(int vitalName; int Min, int Max)
+static bool checkValidvitals(int vitalName, int Min, int Max);
+static bool checkValidvitals(int vitalName, int Min, int Max)
 {
     if((value > Min) && (value < Max))
     {
