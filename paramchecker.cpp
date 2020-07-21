@@ -1,5 +1,5 @@
-static bool checkValidvitals(int vitalValue, int Min, int Max);
-static bool checkValidvitals(int vitalValue, int Min, int Max)
+static bool checkValidvitals(float vitalValue, int Min, int Max);
+static bool checkValidvitals(float vitalValue, int Min, int Max)
 {
     if((vitalValue > Min) && (vitalValue < Max))
     {
@@ -7,22 +7,17 @@ static bool checkValidvitals(int vitalValue, int Min, int Max)
     }
     return false; 
 }
-
-
 bool vitalsAreOk(float bpm, float spo2, float respRate) 
 { 
-  
   bool vitalsOk = false;
-  bool goodbpm =  checkValidvitals(bpm, 70, 150);
-  bool spo2ok = checkValidvitals(spo2, 0, 80 );
-  bool respRateok = checkValidvitals(respRate, 30, 60);
-  
-  if( goodbpm && spo2ok && respRateok)
+  int goodbpm =  checkValidvitals(bpm, 70, 150);
+  int spo2ok = checkValidvitals(spo2, 0, 80 );
+  int respRateok = checkValidvitals(respRate, 30, 60);
+  if ((goodbpm && spo2ok && respRateok) == 1)
   {
       vitalsOk =  true;
   }
   vitalsOk =  false;
-  
   return vitalsOk;
 } 
   
