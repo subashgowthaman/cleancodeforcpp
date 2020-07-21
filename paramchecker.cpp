@@ -1,12 +1,28 @@
-
-bool vitalsAreOk(float bpm, float spo2, float respRate) {
-  int i;
-  if(bpm < 70 || bpm > 150) {
-    return false;
-  } else if(spo2 < 80) {
-    return false;
-  } else if(respRate < 30 || respRate > 60) {
-    return false;
-  }
-  return true;
+bool checkValidvitals(int vitalName; int Min, int Max)
+{
+    if((value > Min) && (value < Max))
+    {
+        return true;
+    }
+    return false; 
 }
+
+
+bool vitalsAreOk(float bpm, float spo2, float respRate) 
+{ 
+  
+  bool vitalOk = false;
+  bool goodbpm =  checkValidvitals(bpm, 70, 150);
+  bool spo2ok = checkValidvitals(spo2, 0, 80 );
+  bool respRateok = checkValidvitals(respRate, 30, 60);
+  
+  if( goodbpm && spo2ok && respRateok)
+  {
+      vitalOk =  true;
+  }
+  
+  vitalOk =  false;
+} 
+  
+  
+  
