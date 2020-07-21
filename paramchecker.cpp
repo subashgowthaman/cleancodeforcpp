@@ -21,7 +21,7 @@ bool vitalsAreOk(float bpm, float spo2, float respRate)
   {
       vitalsOk =  true;
   }
-  vitalOk =  false;
+  vitalsOk =  false;
   
   return vitalsOk;
 } 
